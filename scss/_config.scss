@@ -1,0 +1,44 @@
+// USER VARIABLES SECTION
+
+$accent: #FBD784; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #FFFFFF; // Text Color
+$lineheight: 1.65; // Document Line Height
+$chroniclefont: 'chronicle-display', serif; // Chronicle Display Font Family
+$gilroyfont: 'gilroy', sans-serif; // Gilroy Font Family
+$systemfont: -apple-system, blinkmacsystemfont, arial, sans-serif; // System Font Family
+
+// FONT SIZE VARIABLES
+
+$font-size-small: 1.125rem;  // 18px
+$font-size-medium: 1.5rem;   // 24px
+$font-size-large: 2rem;      // 32px
+$font-size-xlarge: 4rem;     // 64px
+$font-size-xxlarge: 5.5rem;  // 88px
+$font-size-xxxlarge: 15rem;  // 240px
+
+// IMPORT SECTION
+
+@import 'bootstrap-reboot/bootstrap-reboot';
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl, $fbackup: null) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format("woff2"),
+         url($fbackup) format("woff");
+  }
+}
+
+@include font("chronicle-display", normal, 600, "../fonts/chronicle/chronicle-display-semibold.otf");
+@include font("chronicle-display", normal, 700, "../fonts/chronicle/chronicle-display-bold.otf");
+
+@include font("gilroy", normal, 500, "../fonts/gilroy/gilroy-medium.woff2", "../fonts/gilroy/gilroy-medium.woff");
+@include font("gilroy", normal, 700, "../fonts/gilroy/gilroy-bold.woff2", "../fonts/gilroy/gilroy-bold.woff");
+@include font("gilroy", normal, 800, "../fonts/gilroy/gilroy-extrabold.woff2", "../fonts/gilroy/gilroy-extrabold.woff");
+
+// GENERAL DOCUMENT STYLES
+
