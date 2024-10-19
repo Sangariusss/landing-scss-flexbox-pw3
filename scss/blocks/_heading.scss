@@ -1,0 +1,17 @@
+@import "../base/mixins";
+@import "../base/media-mixins";
+@import "../base/variables";
+
+.heading {
+  @include font(4rem, 4.8125rem);
+  @include title-font;
+  @include no-indent;
+  letter-spacing: 0.09375rem;
+}
+
+.heading--main {
+  @include font(5.5rem, 6.25rem);
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+}
+

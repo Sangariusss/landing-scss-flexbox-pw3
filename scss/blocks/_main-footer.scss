@@ -1,0 +1,55 @@
+@import "../base/mixins";
+@import "../base/media-mixins";
+@import "../base/variables";
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-footer__main-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__about-text {
+  @include no-indent;
+  width: 18.75rem;
+  line-height: 2rem;
+}
+
+.main-footer__copyright {
+  @include text-font-l;
+  line-height: 2rem;
+  letter-spacing: 0.0125rem;
+  @include no-indent;
+  margin-top: auto;
+}
+
+.main-footer__more-blog {
+  margin-left: auto;
+  margin-right: 11.5625rem;
+  width: 13.75rem;
+}
+
+.main-footer__heading {
+  @include font(1.5rem, 2rem);
+  color: $accent-color;
+  @include no-indent;
+  margin-bottom: 1.5rem;
+}
+
+.main-footer__list {
+  @include no-indent;
+  @include no-mark;
+}
+
+.main-footer__item {
+  @include text-font-l;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

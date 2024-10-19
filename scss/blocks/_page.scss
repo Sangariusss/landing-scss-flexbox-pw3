@@ -1,0 +1,51 @@
+@import "../base/mixins";
+@import "../base/media-mixins";
+@import "../base/variables";
+
+:focus-visible {
+  outline: 0;
+  outline: 2px solid $accent-color;
+}
+.page {
+  @include text-font;
+  font-size: 18px;
+
+  background-color: $dark-color;
+  background-image: url("../images/photos/css-main-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  color: white;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../images/photos/css-main-background@2x.jpg");
+  }
+}
+.page__main-header {
+  margin-bottom: 190px;
+}
+.page__pagination-right {
+  position: fixed;
+  right: 71px;
+  top: 325px;
+}
+.page__networks {
+  position: fixed;
+  left: 0;
+  top: 433px;
+}
+.page__main-info {
+  margin-bottom: 845px;
+}
+.page__main-page-article {
+  margin-bottom: 200px;
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+}
+.page__main-page-articles {
+  margin-bottom: 200px;
+}
+.page__main-footer {
+  margin-bottom: 120px;
+}

@@ -1,0 +1,33 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+@font-face {
+  font-family: "Chronicle";
+  font-style: normal;
+  font-weight: 400;
+	font-display: swap;
+  src: local("Chronicle"),
+			 local("Chronicle-Display"),
+       url("../fonts/chronicle/Chronicle.woff2") format("woff2"),
+       url("../fonts/chronicle/Chronicle.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+	font-display: swap;
+  src: local("Gilroy"),
+       url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2"),
+       url("../fonts/gilroy/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+	font-display: swap;
+  src: local("Gilroy"),
+       url("../fonts/gilroy/Gilroy-SemiBold.woff2") format("woff2"),
+       url("../fonts/gilroy/Gilroy-SemiBold.woff") format("woff");
+}

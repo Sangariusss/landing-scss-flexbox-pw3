@@ -1,0 +1,15 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1460px;
+}
+.container-full {
+  width: 1760px;
+}
+.container-narrow {
+  width: 920px;
+}
