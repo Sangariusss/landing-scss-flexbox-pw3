@@ -1,2 +1,25 @@
 $accent-color: #FBD784;
 $dark-color: #041722;
+$color-grey: #BDC3C7;
+$color-blue: #8DA7BE;
+$color-blue-light: #80CED7;
+$color-dark: #36393B;
+$color-white: #fff;
+
+.light-theme {
+  background-color: $color-white;
+  color: $color-dark;
+
+  a {
+    color: $color-blue;
+  }
+}
+
+.dark-theme {
+  background-color: $dark-color;
+  color: $color-grey;
+
+  a {
+    color: $accent-color;
+  }
+}

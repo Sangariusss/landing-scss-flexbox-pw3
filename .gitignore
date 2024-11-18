@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Gulp directories
+.gulp/
+
+# SCSS partials
+scss/partials/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# npm and pnpm lock files (if you're using pnpm, replace npm with pnpm)
+package-lock.json
+pnpm-lock.yaml
+
+# Dist directory for compiled assets (optional, based on your build process)
+dist/
+
+# Compiled JavaScript
+js/compiled/
+
+# Coverage reports
+coverage/
+
+# SASS/SCSS cache
+.sass-cache/

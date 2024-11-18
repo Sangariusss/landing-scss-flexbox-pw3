@@ -1,4 +1,4 @@
-# Landing Page with SCSS and Flexbox
+# Interactive Web Design with Gulp
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 
 ## Overview
 
-This project is a landing page created using SCSS with a Flexbox layout, following the BEM (Block, Element, Modifier) methodology. This project emphasizes modern CSS techniques and a component-based approach to web development.
+This project is a landing page created using SCSS with a Flexbox layout, following the BEM (Block, Element, Modifier) methodology. It emphasizes modern web development techniques, such as ES6+ JavaScript features, responsive design, and a component-based approach. The project utilizes Gulp for task automation, ensuring a smooth development workflow.
 
 ## Technologies
 
@@ -20,6 +20,8 @@ This project is a landing page created using SCSS with a Flexbox layout, followi
 - **Flexbox**: A CSS layout module that enables flexible and responsive designs.
 - **BEM Methodology**: A naming convention for CSS classes that promotes reusability and scalability of components.
 - **HTML5**: Utilized for creating a semantic structure for web content.
+- **ES6+ JavaScript**: Modern JavaScript features such as arrow functions, promises, and modules for cleaner and more efficient code.
+- **Gulp**: A task runner for automating repetitive development tasks such as compiling SCSS, minifying JavaScript, and image optimization.
 - **Font Integration**: Incorporates custom fonts, including Chronicle Display and Gilroy.
 - **Image Optimization**: Utilizes JPG, WebP, and SVG formats for responsive images.
 
@@ -29,6 +31,8 @@ This project is a landing page created using SCSS with a Flexbox layout, followi
 - **BEM Naming Convention**: Ensured consistent and clear CSS class naming through BEM.
 - **Custom Fonts**: Integrated Chronicle Display and Gilroy fonts for enhanced typography.
 - **Image Handling**: Included support for various image formats (JPG, WebP, SVG) optimized for responsiveness.
+- **ES6+ JavaScript**: Utilized modern JavaScript features like arrow functions, modules, and async/await for a cleaner, more maintainable codebase.
+- **Gulp Automation**: Automated tasks such as SCSS compilation, JavaScript minification, and image optimization for faster development.
 
 ## File Structure
 
@@ -46,6 +50,11 @@ images/                     # Directory for image assets
 ├── photos/                 # JPG and WebP images for backgrounds and visuals
 css/                        # Compiled CSS files
 └── index.css               # Compiled CSS for the project
+js/                         # JavaScript files for interactivity
+├── language-toggle.js      # Language toggle functionality
+├── main.js                 # Main script for pagination and language toggle
+└── pagination.js           # Pagination logic
+gulpfile.js                 # Gulp tasks for automating development tasks
 ```
 
 ## Setup
@@ -58,15 +67,21 @@ css/                        # Compiled CSS files
 
 2. **Install dependencies**:
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Compile SCSS**:
    ```bash
-   npm run build:css
+   pnpm run gulp
    ```
 
-4. **Run the project**: Open `index.html` in your browser.
+4. **Run the project**: If using Gulp with a live server, run the following command to automatically open `index.html` in your browser:
+
+    ```bash
+    gulp serve
+    ```
+
+    If not using a server, manually open index.html in your browser after Gulp has compiled the assets.
 
 ## Contributions
 
